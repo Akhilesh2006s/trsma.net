@@ -2,19 +2,19 @@ import { User } from "lucide-react";
 
 const leaders = [
   {
-    name: "Sri. Ramesh Kumar",
+    name: "Sri. Arjun Mehta",
     position: "President",
     description: "Leading TRSMA with vision and dedication for over a decade",
     featured: true,
   },
   {
-    name: "Sri. Venkat Reddy",
+    name: "Sri. Vikram Das",
     position: "General Secretary",
     description: "Managing day-to-day operations and member relations",
     featured: true,
   },
   {
-    name: "Sri. Suresh Babu",
+    name: "Sri. Nikhil Rao",
     position: "Treasurer",
     description: "Overseeing financial management and accountability",
     featured: true,
@@ -22,12 +22,12 @@ const leaders = [
 ];
 
 const executiveMembers = [
-  "Sri. Narasimha Rao - Vice President",
-  "Smt. Lakshmi Devi - Joint Secretary",
-  "Sri. Rajendra Prasad - Executive Member",
-  "Sri. Mahesh Kumar - Executive Member",
-  "Smt. Padmavathi - Executive Member",
-  "Sri. Srinivas Reddy - Executive Member",
+  "Sri. Kiran Sharma - Vice President",
+  "Smt. Ananya Iyer - Joint Secretary",
+  "Sri. Dev Malhotra - Executive Member",
+  "Sri. Rohan Gupta - Executive Member",
+  "Smt. Priya Nair - Executive Member",
+  "Sri. Aditya Kapoor - Executive Member",
 ];
 
 const LeadershipSection = () => {
