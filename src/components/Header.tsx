@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/LOGO.jpg";
 
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Updates", href: "#updates" },
-  { label: "Events", href: "#events" },
   { label: "Leadership", href: "#leadership" },
   { label: "Membership", href: "#membership" },
   { label: "Contact", href: "#contact" },
@@ -21,14 +20,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-xl">T</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-display font-bold text-lg text-primary leading-tight">TRSMA</h1>
-              <p className="text-xs text-muted-foreground font-body">Telangana Recognised Schools</p>
-            </div>
+          <a href="#home" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="TRSMA Logo" 
+              className="h-16 object-contain"
+            />
           </a>
 
           {/* Desktop Navigation */}

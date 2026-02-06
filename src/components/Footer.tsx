@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
+import logo from "@/assets/LOGO.jpg";
 
 const quickLinks = [
   { label: "About TRSMA", href: "#about" },
@@ -24,17 +25,15 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center">
-                <span className="text-navy-dark font-display font-bold text-xl">T</span>
-              </div>
-              <div>
-                <h3 className="font-display font-bold text-lg">TRSMA</h3>
-                <p className="text-xs text-primary-foreground/60 font-body">Since 1996</p>
-              </div>
+            <div className="mb-6">
+              <img 
+                src={logo} 
+                alt="TRSMA Logo" 
+                className="h-20 object-contain"
+              />
             </div>
             <p className="text-primary-foreground/70 text-sm font-body leading-relaxed mb-6">
-              Telangana Recognised School Managements Association is the apex body representing private unaided schools across Telangana, dedicated to protecting and promoting quality education.
+              Telangana Recognized School Managements Association (TRSMA) is a unified platform representing recognized private school managements across Telangana. Registered under the Andhra Pradesh Societies Act in the year 2003, Regd. No. 2054/2003.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
@@ -93,22 +92,34 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/70 text-sm font-body">
-                  TRSMA Head Office<br />
-                  Himayatnagar, Hyderabad<br />
-                  Telangana - 500029
+                  2-3-528/C/15/B,<br />
+                  Amberpet, Hyderabad - 500013<br />
+                  Telangana
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/70 text-sm font-body">
-                  +91 40 2322 XXXX
-                </span>
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                <div className="text-primary-foreground/70 text-sm font-body">
+                  <div className="mb-2">
+                    State President<br />
+                    <a href="tel:9347337244" className="hover:text-gold">9347337244</a>
+                  </div>
+                  <div className="mb-2">
+                    State General Secretary<br />
+                    <a href="tel:9989044500" className="hover:text-gold">9989044500</a>
+                  </div>
+                  <div>
+                    State Treasurer<br />
+                    <a href="tel:9052333567" className="hover:text-gold">9052333567</a>
+                  </div>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/70 text-sm font-body">
-                  info@trsma.org
-                </span>
+                <div className="text-primary-foreground/70 text-sm font-body">
+                  <a href="mailto:trsma2054@gmail.com" className="hover:text-gold">trsma2054@gmail.com</a><br />
+                  <a href="https://www.trsma.net" target="_blank" rel="noopener noreferrer" className="hover:text-gold">www.trsma.net</a>
+                </div>
               </li>
             </ul>
           </div>

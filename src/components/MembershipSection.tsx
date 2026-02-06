@@ -2,14 +2,12 @@ import { Check, ArrowRight, Shield, Users, FileCheck, Phone } from "lucide-react
 import { Button } from "@/components/ui/button";
 
 const benefits = [
-  "Direct representation with Government",
-  "Legal advisory and court support",
-  "Fee regulation guidance",
-  "Recognition renewal assistance",
-  "Teacher training programs",
-  "Emergency support 24/7",
-  "Networking with 10,000+ schools",
-  "Exclusive circulars and updates",
+  "Strong collective voice",
+  "Legal and policy guidance",
+  "Professional networking",
+  "Training and development programs",
+  "Updates on government regulations",
+  "Support during institutional challenges",
 ];
 
 const membershipTypes = [
@@ -101,7 +99,7 @@ const MembershipSection = () => {
         </div>
 
         {/* Membership Plans */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           {membershipTypes.map((plan, index) => (
             <div
               key={plan.title}
@@ -143,6 +141,67 @@ const MembershipSection = () => {
               </Button>
             </div>
           ))}
+        </div>
+
+        {/* Membership Eligibility & Requirements */}
+        <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 lg:p-10">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="font-display font-bold text-2xl lg:text-3xl text-primary-foreground mb-6 text-center">
+              Membership Eligibility & Requirements
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-background/50 rounded-lg p-6">
+                <h4 className="font-display font-bold text-lg text-primary-foreground mb-4">Who Can Join</h4>
+                <ul className="space-y-2 text-sm font-body text-primary-foreground/90">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span><strong>Unaided Recognised Private Schools</strong> only</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>Membership starts at <strong>Mandal Level</strong></span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>Schools must be actively running and recognized</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>All educational levels: Pre-Primary to Senior Secondary</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-background/50 rounded-lg p-6">
+                <h4 className="font-display font-bold text-lg text-primary-foreground mb-4">Important Notes</h4>
+                <ul className="space-y-2 text-sm font-body text-primary-foreground/90">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>Membership fee: <strong>₹5,000 per year</strong> per institution</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>Fees must be paid yearly to maintain active membership</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>Members with arrears <strong>cannot vote or contest</strong> elections</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span>Membership provides representation at District and State levels</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-6 bg-destructive/20 border border-destructive/30 rounded-lg p-4">
+              <h4 className="font-display font-bold text-sm text-primary-foreground mb-2">Who Cannot Become a Member</h4>
+              <ul className="space-y-1 text-sm font-body text-primary-foreground/80">
+                <li>• Government or Semi-Government employees</li>
+                <li>• Schools that are not running or not recognized</li>
+                <li>• Persons convicted of moral turpitude</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,19 +2,19 @@ import { User } from "lucide-react";
 
 const leaders = [
   {
-    name: "Sri. Arjun Mehta",
+    name: "",
     position: "President",
     description: "Leading TRSMA with vision and dedication for over a decade",
     featured: true,
   },
   {
-    name: "Sri. Vikram Das",
+    name: "",
     position: "General Secretary",
     description: "Managing day-to-day operations and member relations",
     featured: true,
   },
   {
-    name: "Sri. Nikhil Rao",
+    name: "",
     position: "Treasurer",
     description: "Overseeing financial management and accountability",
     featured: true,
@@ -22,12 +22,12 @@ const leaders = [
 ];
 
 const executiveMembers = [
-  "Sri. Kiran Sharma - Vice President",
-  "Smt. Ananya Iyer - Joint Secretary",
-  "Sri. Dev Malhotra - Executive Member",
-  "Sri. Rohan Gupta - Executive Member",
-  "Smt. Priya Nair - Executive Member",
-  "Sri. Aditya Kapoor - Executive Member",
+  "Vice President",
+  "Joint Secretary",
+  "Executive Member",
+  "Executive Member",
+  "Executive Member",
+  "Executive Member",
 ];
 
 const LeadershipSection = () => {
@@ -51,7 +51,7 @@ const LeadershipSection = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {leaders.map((leader, index) => (
             <div
-              key={leader.name}
+              key={index}
               className="group text-center bg-card rounded-xl border border-border p-8 shadow-card card-hover"
             >
               {/* Avatar */}
@@ -60,9 +60,11 @@ const LeadershipSection = () => {
               </div>
 
               {/* Info */}
-              <h3 className="font-display font-bold text-xl text-foreground mb-1">
-                {leader.name}
-              </h3>
+              {leader.name && (
+                <h3 className="font-display font-bold text-xl text-foreground mb-1">
+                  {leader.name}
+                </h3>
+              )}
               <span className="inline-block px-3 py-1 bg-gold/20 text-gold text-sm font-semibold rounded-full font-body mb-3">
                 {leader.position}
               </span>

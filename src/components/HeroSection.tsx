@@ -1,14 +1,17 @@
 import { ArrowRight, FileText, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/Bg.png";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat"
+        style={{ 
+          backgroundImage: `url(${heroBg})`,
+          backgroundPosition: 'center 15%'
+        }}
       />
       
       {/* Overlay */}
@@ -73,7 +76,7 @@ const HeroSection = () => {
               <div className="w-px h-8 bg-primary-foreground/20" />
               <div className="text-center">
                 <span className="block text-2xl font-bold text-primary-foreground">Since</span>
-                <span className="text-xs">1996</span>
+                <span className="text-xs">2003</span>
               </div>
             </div>
           </div>
